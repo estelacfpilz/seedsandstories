@@ -101,7 +101,7 @@ section { position: relative; }
 .bg-light { background-color: #F2EAE4;}
 
 .bg-image {
-    background-color: var(--light); /* Set a fall-back color while images are loading */ 
+    background-color: #CBAC93; /* Set a fall-back color while images are loading */ 
     background-image: url(./images/artisan-and-margarida.png);
     background-size: cover;
     background-position: 30% 50%; 
