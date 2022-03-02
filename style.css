@@ -104,7 +104,7 @@ section { position: relative; }
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
     background-image: url(./images/artisan-and-margarida.png);
     background-size: cover;
-    background-position: center; 
+    background-position: 30% 50%; 
     background-repeat: no-repeat;
 }
 
@@ -155,6 +155,7 @@ p:last-child {
 
 h1 {
     font-size: 4rem;
+    line-height: 0.8;
     margin-bottom: 0;
     font-family: missrobertson-pro,sans-serif;
     font-weight: 400;
@@ -190,6 +191,21 @@ h4 {
 	.show-sm { display: block; }
 	.hide-sm { display: none;  }
 
-    .sm-no-bg-image { background-image: none; }
+    .sm-padded {padding: 5%;}
 
+    .sm-bg-overlay:before {
+        z-index: 1;
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(242, 234, 228,0.3);
+      }
+
+    .sm-bg-overlay > * {
+        z-index: 2;
+        position: relative;
+      }
 }
