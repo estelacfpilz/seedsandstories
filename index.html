@@ -1,27 +1,68 @@
 ---
 layout: default
-title: Seeds & Stories - Coming soon!
-header_image: /images/seedsandstories-3.png
+title: Homepage
+seo:
+  title: 
+  description:
+  social_image:
+  twitter_card:
+  keywords:
+  hide-from-google: false
+accordion: 
+ - title: this is item 1
+   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+ - title: this is item 2
+   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ---
 
-<header class="bg-image tall-80 grid" style="background-image: url({{page.header_image}}); @media(max-width:48em) {.bg-image {background-image: none;}}">
-    <div class="col-5_sm-9-middle bg-light padded">
-        <h1 class="editable">seeds & stories</h1>
-        <h3 class="editable padded-b">Coming soon</h3>
-        <p class="editable">Seeds and Stories is a social enterprise that empowers women in rural Uganda through our regenerative fashion line. Our products, vocational training, and permaculture programs create new economic opportunities and self-led community development, while also having a positive impact on the local environment.</p>
-    </div>
-</header>
+<!------------------------ Image Banner  ------------------------>
+<section class="bg-image padded grid bg-overlay bg-overlay tall-90">
 
-<section class="bg-featured padded text-light center">
-    <div class="capped-width-narrow">
-        <p class="editable">
-            We are working in the background to create a beautiful online space for Seeds &amp; Stories. To receive updates from us,
-        </p>
-        <h4 class="uppercase editable">
-            Subscribe to the seeds &amp; stories newsletter
-        </h4>
+    <div class="col-12-middle center text-light">
+        <h2> Welcome to your new favourite blog </h2>
+        <p class="emphasis"> Lorem, ipsum dolor sit amet consectetur. </p>
     </div>
-    <div class="center padded-1">
-        <script async data-uid="71d062841a" src="https://winning-architect-5206.ck.page/71d062841a/index.js"></script>
-    </div>
+
 </section>
+
+<!------------------------ Featured blog loop ------------------------>
+<section class="padded">
+
+    <div class="capped-width grid-center">
+
+    <div class="col-12 padded-05 center margin-b-1">
+        <h2> Featured Posts </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quaerat necessitatibus? Praesentium fugit ex neque magni, possimus, iste itaque voluptatem id doloremque voluptas consequatur dolor cumque! Dolores possimus laboriosam adipisci.</p>
+    </div>
+
+        {% assign featured_posts = site.posts | where: 'featured', true %}
+
+        {% for post in featured_posts limit:3 %}
+
+            <div class="col-4 post-item padded-05">
+                <div class="bg-image portrait" style="background-image:url( '{{ post.featured_image }}' );"></div>
+                <div class="padded-t-1">
+                    
+                    {% for item in post.categories %}
+                        <span class="tag"> {{item}} </span>
+                    {% endfor %}
+
+                    <h2 class="margin-t-1"> {{ post.title }} </h2>
+                    <p> {{ post.description }} </p>
+                    <a href="{{ post.url }}" class="subtle-button"> Read More </a>
+
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!-- FAQ sample -->
+<section class="capped-width">
+    {% include accordion.html %}
+</section>
+
+
