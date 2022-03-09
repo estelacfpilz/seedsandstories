@@ -8,3 +8,9 @@ $('.hamburger-button').click(function(){
 $('.accordion-title').click(function(){
     $(this).toggleClass('accordion-active');
 })
+
+// ----------- Lightgallery
+lightGallery(document.getElementById('lightgallery'), {
+    speed: 500,
+    download: false
+});

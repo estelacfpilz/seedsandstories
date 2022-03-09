@@ -97,8 +97,13 @@ section { position: relative; }
 
 /* ------------ Backgrounds & Background Images  ----------------------- */
 
+/* ------------ Backgrounds & Background Images  ----------------------- */
+.bg-dark     { background-color: var(--dark);}
+.bg-medium { background-color: var(--medium);}
 .bg-featured { background-color: var(--featured);}
-.bg-light { background-color: var(--light);}
+.bg-featured-light { background-color: var(--featured-light);}
+.bg-light    { background-color: var(--light); }
+.bg-v-light  { background-color: var(--v-light); }
 
 .bg-image {
     background-color: #CBAC93; /* Set a fall-back color while images are loading */ 
@@ -108,8 +113,11 @@ section { position: relative; }
     background-repeat: no-repeat;
 }
 
-.b-pos-b {background-position: bottom;}
-.b-pos-t {background-position: top;}
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
 
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
 
@@ -119,6 +127,10 @@ a.bg-image { display: block;}
 .portrait-tall { padding-bottom: 175%; }
 .portrait      { padding-bottom: 125%; }
 .square        { padding-bottom: 100%; }
+
+/* Image gallery */
+  
+.flip-alternate { flex-direction: column-reverse;}
 
 /* ------------ Typography Styles ----------------------- */
 
@@ -137,10 +149,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    line-height: 1.1;
+    line-height: 1.2;
     margin-bottom: 1.2rem;
-    font-family: 'Lora', serif;
-    font-weight: 300;
 }
 
 p, li {
@@ -153,28 +163,296 @@ p:last-child {
     margin-bottom: 0;
 }
 
-h1 {
-    font-size: 4rem;
-    line-height: 0.8;
+h2 {
+    font-size: 2rem;
+    font-family: 'Lora', serif;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-family: 'Lora', serif;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-family: 'Lora', serif;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+}
+
+/* Unique Typography Styles  */
+.emphasis       { font-size: 1.4rem; margin-bottom: 1rem;}
+.text-featured  { color: var(--featured-text);}
+.text-light     { color: var(--light-text);}
+.text-w-medium  { font-weight: 500;}
+.text-w-light  { font-weight: 300;}
+.subtle         { opacity: 0.8;     }
+.subtitle       { font-size: 0.8rem; }
+.text-xl        { font-size: 3.5rem; font-weight: 300;}
+
+/* ------------ Buttons & Links ------------ */
+a {
+    color: inherit;
+}
+
+a:hover {
+  color: var(--featured-text); 
+}
+
+p a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+p a:hover { 
+  color: var(--featured-text); 
+}
+
+a.hover-light:hover {
+  color: var(--light); 
+}
+
+.button { 
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid;
+}
+
+.button:hover {
+    color: var(--featured-text);
+}
+
+.subtle-button {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.button-color {
+    text-decoration: none;
+    color: var(--featured);
+    border-bottom: 1px solid;
+  }
+
+.accordion-active {
+    color: var(--featured-text);
+}
+
+/* ------------ Forms -------------- */
+form input, form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid var(--dark);
+    background-color: var(--light);
+    outline: none;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: var(--featured-light);
+  }
+  
+  textarea {
+    min-height: 4.5rem;
+  }
+  
+  form label {
+    margin-top: 1rem;
+    display: block;
+    /* text-transform: uppercase; */
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+  }
+  
+  button {
+    display: inline-block;
+    margin-top: 1rem;
+    border: none;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: condor, sans-serif;
+    font-weight: 400;
+    background-color: inherit;
+    color: var(--featured);
+  }
+  
+  button:hover {
+    font-style: italic;
+    color: var(--featured);
+  }
+  
+/* ------------ Header & Hamburger Menu -------------- */
+
+nav a {
+    padding: 0.25rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+    font-family: jost, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+header nav a:hover {
+    color: var(--featured-light);
+}
+
+footer nav a {
+    padding: 0.25rem 0;
+    display: block;
+}
+
+footer nav a:hover {
+color: var(--featured-light);
+}
+
+.logo {
+    text-decoration: none;
+    display: inline;
+    font-size: 3rem;
+    line-height: 1;
     margin-bottom: 0;
     font-family: missrobertson-pro,sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-h3 {
-    font-size: 2rem;
-    font-style: italic;
-}
-h2 {
-    font-size: 1.4rem;
-}
-h4 {
-    font-family: 'Jost', serif;
-    font-weight: 400;
-    font-size: 1.4rem;
+.button-header {
+    background-color: var(--featured);
+    color: var(--light);
+    padding: 0.25rem 1rem;
+    display: inline-block;
 }
 
+.button-header:hover {
+    background-color: var(--featured-light);
+    color: var(--light);
+}
+
+.button-footer {
+    color: var(--featured);
+    font-weight: 500;
+}
+
+/* Dropdown styles */
+
+.dropdown { 
+    position: relative; 
+    display: inline-block;
+}
+
+.dropdown-title {
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0.25rem;
+    padding: 0.25rem;
+    display:none; 
+    background-color: var(--v-light);
+    z-index: 2;
+    text-align: left;
+    min-width: 15rem;
+}
+
+.dropdown:hover .dropdown-content{ 
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.4rem;
+}
+
+.hamburger-button {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    z-index: 5;
+}
+    
+/* Styles when the hamburger button is active  */
+.hamburger-button.active {
+    color: white;
+}
+
+
+.mobile-menu {
+    display: none; 
+    background-color: var(--featured);
+    padding: 5%;
+    position: fixed; 
+    z-index:5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.mobile-menu a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 5%;
+    display: block;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+/* ------------ Blogging elements  ----------------------- */
+.post-info {
+    font-size: 0.8rem;
+    color: var(--medium-text);
+}
+  
+/* Social Share Nav  */
+
+.social-share {
+    display: block;
+}
+
+.social-share a {
+    padding: 0.25rem 0.5rem;
+}
+
+/* Miscelaneous elements  */
+
+hr.short {
+    border: 0.5px solid;
+    height: 1px;
+    width: 3rem;
+    margin: 0.3em 1rem;
+    display: inline-block;
+}
+
+hr.short.center {
+    margin:auto;
+    margin: 1rem auto;
+}
+  
+  
+  
 /* ------------ Responsive Styles ----------------------- */
 
 /* General CSS Responsive Styles (Apply everywhere unless overriden) */ 
