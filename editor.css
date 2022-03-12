@@ -35,6 +35,12 @@ img.small-centered-image {
     margin:auto;
 }
 
+/* Applied to content, excluded from style dropdown */
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+.align-justify { text-align: justify; }
+
 
 
 @media(max-width: 767px) {
