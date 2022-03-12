@@ -41,3 +41,11 @@ _array_structures:
           _id: cta-arches
           heading:
           subheading: 
+      - label: Basic Heading + Text
+        icon: ballot
+        value:
+          _id: basic-text
+          heading:
+          subheading:
+          paragraph: 
+          _image:  

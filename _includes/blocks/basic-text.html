@@ -1,0 +1,18 @@
+<section class="padded bg-v-light">
+    <div class="capped-width-narrow">
+      {% unless block.heading == nil %}
+      <h2>{{block.heading}}</h2>
+      {% endunless %}
+      
+      {% unless block.subheading == nil %}
+      <h5>{{block.subheading}}</h5>
+      {% endunless %}
+      
+      {% unless block.paragraph == nil %}
+      <p>{{block.paragraph}}</p>
+      {% endunless %}
+
+      {% unless block.image == nil %}
+      <img src="{{block._image}}" alt="">
+      {% endunless %}
+  </section>
