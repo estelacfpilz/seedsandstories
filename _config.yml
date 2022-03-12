@@ -46,7 +46,7 @@ _array_structures:
         value:
           _id: basic-text
           block_html: 
-      - label: Image Banner
+    - label: Image Banner
         icon: image
         value:
           _id: image-banner

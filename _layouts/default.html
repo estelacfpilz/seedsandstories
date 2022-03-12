@@ -2,6 +2,7 @@
 <html lang="en">
 
     <head>
+
         <!------------ Technical Metadata  --------------------------------->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,13 +17,23 @@
         <meta name="description" content="{{page.seo.description | default: site.data.site-settings.seo.description }}">
         <meta name="keywords" content="{{page.seo.keywords | default: site.data.site-settings.seo.keywords }}">
         
+        {% if page.seo.hide-from-google == true %}
+            <meta name="robots" content="noindex, nofollow">
+        {% else %}
+             <meta name="robots" content="index, follow">
+        {% endif %}
+        
         <!------------ External Stylesheets  ------------>
         
         <!-- Gridlex -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
         
         <!-- Font Awesome Version 5 for Icons  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+        
+        <!-- Lightgallery for pop-ups  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -36,15 +47,14 @@
         </head>
 
 <body>
+    {% include inline-styles.html %}
+    {% include site-header.html %}
     {{content}}
+    {% include site-footer.html %}
 
-    <!------------------------ Additional blocks  ------------------------>
-    {% for block in page.page_blocks %}
-
-    {% include blocks/{{block._id}}.html block=block %}
-
-    {% endfor %}
-
+    <!-- Lightgallery for pop-ups  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>
