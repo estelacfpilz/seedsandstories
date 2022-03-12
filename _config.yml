@@ -26,4 +26,13 @@ _options:
     underline: true
     strike: true
     image: true
-    
+
+page_blocks: []
+_array_structures:
+  page_blocks:
+    - label: CTA Image Banner
+      value:
+        _id: cta-photobanner
+    - label: CTA Arches Banner
+      value:
+        _id: cta-arches
