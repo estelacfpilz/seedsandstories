@@ -1,14 +1,4 @@
 <section class="padded bg-v-light">
     <div class="capped-width-narrow">
-      {% unless block.heading == nil %}
-      <h2 class="editable">{{block.heading}}</h2>
-      {% endunless %}
-      
-      {% unless block.subheading == nil %}
-      <h5 class="editable">{{block.subheading}}</h5>
-      {% endunless %}
-      
-      {% unless block.paragraph == nil %}
-      <p class="editable">{{block.paragraph}}</p>
-      {% endunless %}
+        {{block.block_html}}</h2>
   </section>

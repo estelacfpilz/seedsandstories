@@ -45,6 +45,4 @@ _array_structures:
         icon: ballot
         value:
           _id: basic-text
-          heading:
-          subheading:
-          paragraph:  
+          block_html: 
