@@ -35,9 +35,9 @@ _array_structures:
         icon: ballot
         value:
           _id: cta-photobanner
-          heading:
-          subheading: 
       - label: CTA Arches Banner
         icon: ballot
         value:
           _id: cta-arches
+          heading:
+          subheading: 
