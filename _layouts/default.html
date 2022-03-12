@@ -48,8 +48,16 @@
 
 <body>
     {% include inline-styles.html %}
+    <!-- Header -->
     {% include site-header.html %}
+    <!-- Main -->
     {{content}}
+    
+    {% for block in page.page_blocks %}
+    {% include blocks/{{block._id}}.html block=block %}
+    {% endfor %}
+
+    <!-- Footer -->
     {% include site-footer.html %}
 
     <!-- Lightgallery for pop-ups  -->
