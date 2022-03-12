@@ -1,4 +1,18 @@
 _editables:
+  text:
+    italic: true
+    left: align-left
+    center: align-center
+    right: align-right
+    justify: align-justify
+  block:
+    format: p h3
+    undo: true
+    redo: true
+    left: align-left
+    center: align-center
+    right: align-right
+    justify: align-justify
   content:
     bold: true
     format: p h1 h2 h3 h4 h5 h6

@@ -42,7 +42,6 @@ img.small-centered-image {
 .align-justify { text-align: justify; }
 
 
-
 @media(max-width: 767px) {
     .float-right-image, 
     .float-left-image {
