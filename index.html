@@ -104,7 +104,7 @@ accordion:
 </section>
 
 <!------------------------ Shop Intro  ------------------------>
-<section class="bg-light grid tall-60">
+<section class="grid tall-60">
     <div class="col-6_sm-12 bg-image" style="background-image: url({{page.product-banner-1_image}});">
     </div>
     <div class="col-6_sm-12 bg-image" style="background-image: url({{page.product-banner-2_image}});">
@@ -132,7 +132,7 @@ accordion:
     </div>        
 </section>
 
-<!-- CTA -->
+<!------------------------ CTA  ------------------------>
 {% for block in page.page_blocks %}
 
   {% include blocks/{{block._id}}.html block=block %}

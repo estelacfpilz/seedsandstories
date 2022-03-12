@@ -102,6 +102,7 @@ section { position: relative; }
 .bg-medium { background-color: var(--medium);}
 .bg-featured { background-color: var(--featured);}
 .bg-featured-light { background-color: var(--featured-light);}
+.bg-contrast {background-color: var(--contrast);}
 .bg-light    { background-color: var(--light); }
 .bg-v-light  { background-color: var(--v-light); }
 
@@ -109,7 +110,7 @@ section { position: relative; }
     background-color: #CBAC93; /* Set a fall-back color while images are loading */ 
     background-image: url(./images/artisan-and-margarida.png);
     background-size: cover;
-    background-position: 30% 50%; 
+    background-position: center; 
     background-repeat: no-repeat;
 }
 
@@ -122,7 +123,7 @@ section { position: relative; }
 .bg-cta-banner { 
     background-image: url(/images/cta-banner.png);
     background-size: cover;
-    background-position: 30% 50%; 
+    background-position: center; 
     background-repeat: no-repeat;
 }
 
@@ -155,7 +156,15 @@ a.bg-image { display: block;}
 
 .shape-circle { border-radius: 50%; }
 
+.fixed {
+    background-attachment: fixed;
+}
 
+img.float-left-image {
+    max-width:50%;
+    float: left;
+    margin: 2rem 3rem 2rem -5rem;
+}
 /* Image gallery */
   
 .flip-alternate { flex-direction: row-reverse;}
@@ -244,6 +253,7 @@ h6 {
 /* ------------ Buttons & Links ------------ */
 a {
     color: inherit;
+    font-size: 1.1rem;
 }
 
 a:hover {
@@ -544,7 +554,7 @@ hr.short.center {
 }
 
 /* SM devices */
-@media(max-width:48em) {
+@media(max-width:47em) {
 
 	.show-sm { display: block; }
 	.hide-sm { display: none;  }
@@ -566,4 +576,11 @@ hr.short.center {
         z-index: 2;
         position: relative;
       }
+
+    img.float-right-image, 
+    img.float-left-image {
+    float: none;
+    max-width: 100%;
+    margin: 0;
+    }
 }

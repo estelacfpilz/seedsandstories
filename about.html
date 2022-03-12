@@ -1,6 +1,14 @@
 ---
 layout: default
 title: About us
+header_image: /images/seedsandstories-3.png
+banner-1_image: /images/artisan-and-margarida.png
+banner-2_image: /images/seedsandstories-11.png
+awards:
+  - title: Award title
+    description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas in cum, saepe amet itaque aliquid harum laboriosam dicta quidem earum.
+    url: https://www.google.com/
+    award-logo_image: https://cdn.logo.com/hotlink-ok/logo-social.png
 seo:
   title:
   description:
@@ -9,3 +17,84 @@ seo:
   keywords:
   hide-from-google: false
 ---
+
+<!------------------------ Header  ------------------------>
+<section class="padded-tb grid bg-contrast tall-60 text-light">
+  <div class="col-5_sm-12-middle padded-lg">
+    <h1 class="editable">About us</h1>
+    <h5 class="editable">Subheading</h5>
+  </div>
+  <div class="col-7_sm-12 sm-padded">
+    <div class="bg-image landscape" style="background-image: url({{page.header_image}});"></div>
+  </div>
+</section>
+
+<!------------------------ Mission & Vision  ------------------------>
+<section class="padded bg-light">
+  <div class="capped-width-narrow grid">
+    <div class="col-6_sm-12 padded-1 editable">
+      <h2>Our Mission</h2>
+    </div>
+    <div class="col-6_sm-12 padded-1 padded-b editable">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ipsam non doloremque sint modi atque deserunt. Pariatur aperiam laborum fugiat numquam officia harum, impedit minima mollitia voluptates, qui quae ab.</p>
+    </div>
+    <div class="col-6_sm-12 padded-1 editable">
+      <h2>Our Vision</h2>
+    </div>
+    <div class="col-6_sm-12 padded-1 editable">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ipsam non doloremque sint modi atque deserunt. Pariatur aperiam laborum fugiat numquam officia harum, impedit minima mollitia voluptates, qui quae ab.</p>
+    </div>
+  </div>
+</section>
+
+
+<!------------------------ Photo banner  ------------------------>
+<section class="">
+  <div class="bg-image tall-80 fixed" style="background-image: url({{page.banner-1_image}});">
+  </div>
+</section>
+
+<!------------------------ Story  ------------------------>
+<section class="padded bg-light">
+  <div class="capped-width-narrow">
+    <h2 class="editable">Our journey</h2>
+    <h5 class="editable">Sub-heading</h5>
+    <div class="editable">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <img src="/images/seedsandstories-1.png" alt="Seeds & Stories" class="float-left-image">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    <div class="center padded">
+      <a href="/donate.html" class="button-bold">Support Seeds & Stories</a>
+    </div>
+  </div>
+</section>
+
+<!------------------------ Photo banner  ------------------------>
+<section class="">
+  <div class="bg-image tall-80 fixed" style="background-image: url({{page.banner-2_image}});">
+  </div>
+</section>
+
+<!------------------------ Recognition  ------------------------>
+<section class="padded bg-v-light">
+  <div class="capped-width-narrow">
+    <h2 class="editable">Recognition</h2>
+    <h5 class="editable">Seeds & Stories is an award-winning organization</h5>
+    <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <div class="grid">
+      {% for award in page.awards %}
+      <div class="col-4_sm-12 padded">
+        <div class="bg-image square" style="background-image: url({{award.award-logo_image}});"></div>
+      </div>
+      <div class="col-8_sm-12-middle padded">
+        <h5>{{award.title}}</h5>
+        <p>{{award.description}}</p>
+        <a href="{{award.url}}" class="button-subtle editable">Learn more</a>
+      </div>
+      {% endfor %}
+    </div>
+</section>
