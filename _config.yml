@@ -30,11 +30,14 @@ _options:
 page_blocks: []
 _array_structures:
   page_blocks:
-    - label: CTA Image Banner
-      icon: ballot
-      value:
-        _id: cta-photobanner
-    - label: CTA Arches Banner
-      icon: ballot
-      value:
-        _id: cta-arches
+    values:
+      - label: CTA Image Banner
+        icon: ballot
+        value:
+          _id: cta-photobanner
+          heading:
+          subheading: 
+      - label: CTA Arches Banner
+        icon: ballot
+        value:
+          _id: cta-arches
