@@ -6,10 +6,17 @@ banner-1_image: /images/artisan-and-margarida.png
 banner-2_image: /images/seedsandstories-11.png
 awards:
   - title: Award title
-    description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas in cum, saepe amet itaque aliquid harum laboriosam dicta quidem earum.
+    description: >-
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas in cum,
+      saepe amet itaque aliquid harum laboriosam dicta quidem earum.
     url: https://www.google.com/
     award-logo_image: https://cdn.logo.com/hotlink-ok/logo-social.png
 page_blocks:
+  - _id: basic-text
+    heading: Testing
+    subheading: subheading
+    paragraph: Lorem ipsuuuuuum
+    block_image: /uploads/cta-banner.png
 seo:
   title:
   description:
@@ -50,7 +57,7 @@ seo:
 
 
 <!------------------------ Photo banner  ------------------------>
-<section class="">
+<section>
   <div class="bg-image tall-80 fixed" style="background-image: url({{page.banner-1_image}});">
   </div>
 </section>
@@ -62,7 +69,7 @@ seo:
     <h5 class="editable">Sub-heading</h5>
     <div class="editable">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <img src="/images/seedsandstories-1.png" alt="Seeds & Stories" class="float-left-image">
+      <img src="/images/seedsandstories-1.png" alt="Seeds & Stories" class="float-left-image" />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -75,7 +82,7 @@ seo:
 </section>
 
 <!------------------------ Photo banner  ------------------------>
-<section class="">
+<section>
   <div class="bg-image tall-80 fixed" style="background-image: url({{page.banner-2_image}});">
   </div>
 </section>
@@ -98,7 +105,7 @@ seo:
       </div>
       {% endfor %}
     </div>
-</section>
+</div></section>
 
 <!------------------------ Additional blocks  ------------------------>
 {% for block in page.page_blocks %}
