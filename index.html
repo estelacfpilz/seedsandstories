@@ -2,7 +2,19 @@
 layout: default
 title: Homepage
 header_image: /images/seedsandstories-3.png
-artisan-side_image: /images/seedsandstories-3.png
+artisan-side-banner_image: /images/seedsandstories-3.png
+artisan-side_image: /images/seedsandstories-4.png
+village-side-banner_image: /images/seedsandstories-3.png
+village-side-1_image: /images/seedsandstories-11.png
+village-side-2_image: /images/seedsandstories-9.png
+product-banner-1_image: /images/seedsandstories-7.png
+product-banner-2_image: /images/seedsandstories-8.png
+product-1_image: /images/seedsandstories-7.png
+product-2_image: /images/seedsandstories-8.png
+product-3_image: /images/seedsandstories-6.png
+page_blocks:
+  - _id: cta-arches
+    heading: Be part of this change
 seo:
   title: 
   description:
@@ -39,10 +51,10 @@ accordion:
 <!------------------------ Artisan Intro  ------------------------>
 <section class="bg-light grid">
     <div class="col-6_sm-12 padded center">
-        <h3>Meet our artisan Meno</h3>
-        <img src="/images/seedsandstories-14.jpg" alt="" class="shape-dome img-500">
+        <h3 class="editable">Meet our artisan Meno</h3>
+        <img src="/images/seedsandstories-14.jpg" alt="" class="shape-dome img-500 editable">
     </div>
-    <div class="col-6_sm-12 bg-image" style="background-image: url({{page.artisan-side_image}});">
+    <div class="col-6_sm-12 bg-image" style="background-image: url({{page.artisan-side-banner_image}});">
     </div>
 </section>
 
@@ -50,11 +62,78 @@ accordion:
     <p class="editable testimonial capped-width-narrow center">“Seeds & Stories has been transformational for my family. As a mother of four, ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
     <div class="grid capped-width-narrow">
         <div class="col-6_sm-12 padded">
-            <div class="bg-image square"></div>
+            <div class="bg-image square" style="background-image: url({{page.artisan-side_image}});"></div>
         </div>
         <div class="col-6_sm-12-middle padded center">
             <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed autem quae nostrum accusantium totam dolore distinctio. Molestiae ex reiciendis debitis aliquid obcaecati tenetur vero voluptatem ut nulla, culpa minima.</p>
-            <a href="#" class="button-sublte">Meet our artisans</a>
+            <a href="#" class="button-subtle editable">Meet our artisans</a>
         </div>
     </div>
 </section>
+
+<!------------------------ Bigodi Intro  ------------------------>
+<section class="bg-light grid">
+    <div class="col-6_sm-12 padded center">
+        <h3 class="editable">Discover Bigodi, Uganda</h3>
+        <img src="/images/seedsandstories-13.jpg" alt="" class="shape-dome img-500 editable">
+    </div>
+    <div class="col-6_sm-12 bg-image" style="background-image: url({{page.village-side-banner_image}});">
+    </div>
+</section>
+
+<section class="bg-v-light padded">
+    <div class="grid capped-width-narrow">
+        <div class="col-6_sm-12 padded">
+            <div class="bg-image square" style="background-image: url({{page.village-side-1_image}});"></div>
+        </div>
+        <div class="col-6_sm-12-middle padded center">
+            <p class="editable">We are based in Bigodi, a village rich in natural materials but which  is suffering from the effects of environmental degradation due to human activities. <br> Seeds & Stories’ mission is to combat environmental degradation and contribute to Bigodi’s environmental regeneration through education and vocational training, helping the population build a circular, self-sufficient, community-based economy. We offers training on permaculture, regenerative agriculture, waste management, and water conservation. .</p>
+            <a href="#" class="button-subtle editable">Discover our vocational training</a>
+        </div>
+    </div>
+    <div class="grid capped-width-narrow flip-alternate">
+        <div class="col-6_sm-12 padded">
+            <div class="bg-image square" style="background-image: url({{page.village-side-2_image}});"></div>
+        </div>
+        <div class="col-6_sm-12-middle padded center">
+            <p class="editable">Our artisans only use organic and sustainably harvested natural local fibres, including backcloth, palm leaf, millet straws, papyrus, raffia, colona maranta, and banana fibre. We only use earth-based dyes, a combination of food waste, plants, leaves, seeds, roots, barks and clay.</p>
+            <a href="#" class="button-subtle editable">Discover the materials</a>
+        </div>
+    </div>
+</section>
+
+<!------------------------ Shop Intro  ------------------------>
+<section class="bg-light grid tall-60">
+    <div class="col-6_sm-12 bg-image" style="background-image: url({{page.product-banner-1_image}});">
+    </div>
+    <div class="col-6_sm-12 bg-image" style="background-image: url({{page.product-banner-2_image}});">
+    </div>
+</section>
+
+<section class="padded bg-v-light">
+    <div class="capped-width-narrow">
+        <h2 class="editable">Regenerative fashion</h2>
+        <h5 class="editable">sub-heading here</h5>
+        <p class="editable">Our products are made ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <p class="editable">Every purchase made will help us to pay fair wages and financially empower our women artisans, offer informal educational and vocational training to local women, while contributing for environmental regeneration. All our profits will be reinvested in local or regional social and environmental projects.</p>
+        <a href="/shop.html" class="button-subtle editable">View our products</a>
+        <div class="grid">
+            <div class="col-4_sm-6 padded-1 padded-l-0" >
+                <div class="bg-image square" style="background-image: url({{page.product-1_image}});"></div>
+            </div>
+            <div class="col-4_sm-6 padded-1 padded-l-0">
+                <div class="bg-image square" style="background-image: url({{page.product-2_image}});"></div>
+            </div>
+            <div class="col-4_sm-12 padded-1 padded-l-0">
+                <div class="bg-image square" style="background-image: url({{page.product-3_image}});"></div>
+            </div>
+        </div>
+    </div>        
+</section>
+
+<!-- CTA -->
+{% for block in page.page_blocks %}
+
+  {% include blocks/{{block._id}}.html block=block %}
+
+{% endfor %}
