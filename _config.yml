@@ -32,17 +32,22 @@ _array_structures:
   page_blocks:
     values:
       - label: CTA Image Banner
-        icon: ballot
+        icon: arrow_forward
         value:
           _id: cta-photobanner
       - label: CTA Arches Banner
-        icon: ballot
+        icon: arrow_forward
         value:
           _id: cta-arches
           heading:
           subheading: 
       - label: Basic Heading + Text
-        icon: ballot
+        icon: description
         value:
           _id: basic-text
           block_html: 
+    - label: Image Banner
+        icon: image
+        value:
+          _id: image-banner
+          block_image: 
