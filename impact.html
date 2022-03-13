@@ -1,6 +1,16 @@
 ---
 layout: default
 title: Our programs and impact
+header_image: /images/seedsandstories-5.png
+page_blocks:
+  - _id: cta-photobanner
+  - _id: basic-text
+    block_html: <h2>hello</h2>
+accordion:
+  - title: this is question 1
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  - title: this is question 2
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 seo:
   title:
   description:
@@ -9,3 +19,43 @@ seo:
   keywords:
   hide-from-google: false
 ---
+
+<!------------------------ Header  ------------------------>
+<section class="padded-tb grid bg-featured tall-60 text-light">
+  <div class="col-5_sm-12-middle padded-lg">
+    <h1 class="editable">Our programs and impact</h1>
+    <h5 class="editable">Subheading</h5>
+  </div>
+  <div class="col-7_sm-12 sm-padded">
+    <div class="bg-image landscape" style="background-image: url({{page.header_image}});"></div>
+  </div>
+</section>
+
+<!------------------------ Highlights  ------------------------>
+<section class="padded bg-v-light">
+  <div class="capped-width-narrow grid center">
+    <div class="col-4_sm-12 editable padded-1">
+      <h5 class="uppercase"> <span class="text-xl">Community</span><br> focused</h5>
+    </div>
+    <div class="col-4_sm-12 editable padded-1">
+      <h5 class="uppercase"> <span class="text-xl">100 families</span><br> transformed</h5>
+    </div>
+    <div class="col-4_sm-12 editable padded-1">
+      <h5 class="uppercase"> <span class="text-xl">25 women</span><br> trained & empowered</h5>
+    </div>
+  </div>
+</section>
+
+<!------------------------ Blocks  ------------------------>
+{% for block in page.page_blocks %}
+{% include blocks/{{block._id}}.html block=block %}
+{% endfor %}
+
+<!------------------------ FAQ  ------------------------>
+<section class="padded bg-v-light">
+  <div class="capped-width-narrow">
+    <h2 class="editable">Frequently asked questions</h2>
+
+    {% include accordion.html %}
+  </div>
+</section>

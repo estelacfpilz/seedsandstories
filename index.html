@@ -58,11 +58,12 @@ seo:
 
 <section class="bg-v-light padded">
     <p class="editable testimonial capped-width-narrow center">“Seeds & Stories has been transformational for my family. As a mother of four, ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
-    <div class="grid capped-width-narrow">
+    <div class="grid capped-width">
         <div class="col-6_sm-12 padded">
             <div class="bg-image square" style="background-image: url({{page.artisan-side_image}});"></div>
         </div>
         <div class="col-6_sm-12-middle padded center">
+            <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed autem quae nostrum accusantium totam dolore distinctio. Molestiae ex reiciendis debitis aliquid obcaecati tenetur vero voluptatem ut nulla, culpa minima.</p>
             <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed autem quae nostrum accusantium totam dolore distinctio. Molestiae ex reiciendis debitis aliquid obcaecati tenetur vero voluptatem ut nulla, culpa minima.</p>
             <a href="#" class="button-subtle editable">Meet our artisans</a>
         </div>
@@ -80,7 +81,7 @@ seo:
 </section>
 
 <section class="bg-v-light padded">
-    <div class="grid capped-width-narrow">
+    <div class="grid capped-width">
         <div class="col-6_sm-12 padded">
             <div class="bg-image square" style="background-image: url({{page.village-side-1_image}});"></div>
         </div>
@@ -89,7 +90,7 @@ seo:
             <a href="#" class="button-subtle editable">Discover our vocational training</a>
         </div>
     </div>
-    <div class="grid capped-width-narrow flip-alternate">
+    <div class="grid capped-width flip-alternate">
         <div class="col-6_sm-12 padded">
             <div class="bg-image square" style="background-image: url({{page.village-side-2_image}});"></div>
         </div>
@@ -128,3 +129,8 @@ seo:
         </div>
     </div>        
 </section>
+
+<!------------------------ Blocks  ------------------------>
+{% for block in page.page_blocks %}
+{% include blocks/{{block._id}}.html block=block %}
+{% endfor %}

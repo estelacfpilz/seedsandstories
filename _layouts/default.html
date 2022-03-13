@@ -53,15 +53,13 @@
     <!-- Main -->
     {{content}}
     
-    {% for block in page.page_blocks %}
-    {% include blocks/{{block._id}}.html block=block %}
-    {% endfor %}
-
     <!-- Footer -->
     {% include site-footer.html %}
 
     <!-- Lightgallery for pop-ups  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
+
+    <!-- My Javascript -->
     <script src="/main.js"></script>
 </body>
 

@@ -34,7 +34,7 @@ seo:
 </section>
 
 <!------------------------ Mission & Vision  ------------------------>
-<section class="padded bg-light">
+<section class="padded bg-v-light">
   <div class="capped-width-narrow grid">
     <div class="col-6_sm-12 padded-1 editable">
       <h2>Our Mission</h2>
@@ -102,3 +102,8 @@ seo:
       {% endfor %}
     </div>
 </div></section>
+
+<!------------------------ Blocks  ------------------------>
+{% for block in page.page_blocks %}
+{% include blocks/{{block._id}}.html block=block %}
+{% endfor %}

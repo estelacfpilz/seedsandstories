@@ -4,11 +4,6 @@ $('.hamburger-button').click(function(){
     $(this).toggleClass('active');
 });
 
-// ----------- Accordion class of active
-$('.accordion-title').click(function(){
-    $(this).toggleClass('accordion-active');
-})
-
 // ----------- Lightgallery
 lightGallery(document.getElementById('lightgallery'), {
     speed: 500,
