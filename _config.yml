@@ -55,14 +55,14 @@ _array_structures:
         icon: description
         value:
           _id: image-and-text
-          bg-color:
+          bg-style:
           block_html:
           block_image: 
       - label: Heading + Two Col. - Text + Image
         icon: description
         value:
           _id: heading-two-col
-          bg-color:
+          bg-style:
           heading:
           subheading: 
           block_html:
