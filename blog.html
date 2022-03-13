@@ -11,19 +11,21 @@ seo:
 ---
 
 <!------------------------ Split blog loop (part 1) ------------------------>
-<section class="padded">
+<section class="padded bg-v-light">
 
     <div class="capped-width grid-center">
 
     <div class="col-9 padded-05 center margin-b-1">
-        <h2> Latest Posts </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quaerat necessitatibus? Praesentium fugit ex neque magni, possimus, iste itaque voluptatem id doloremque voluptas consequatur dolor cumque! Dolores possimus laboriosam adipisci.</p>
+        <h2 class="editable"> Latest Posts </h2>
+        <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quaerat necessitatibus? Praesentium fugit ex neque magni, possimus, iste itaque voluptatem id doloremque voluptas consequatur dolor cumque! Dolores possimus laboriosam adipisci.</p>
+
+        {% for archive in site.archives %}
+            <a href="{{archive.url}}" class="tag"> {{archive.category}}</a>
+        {% endfor %}
     </div>
 
         {% for post in site.posts limit:3 %}
-
             {% include post-loop-item-square.html %}
-
         {% endfor %}
 
     </div>
@@ -35,9 +37,9 @@ seo:
 <section class="bg-featured text-light padded center capped-width"> 
 
     <div class="capped-width-narrow">
-        <h2> A catchy heading </h2>
-        <p> This is a call-to-action to drive traffic somewhere important </p>
-        <a href="#" class="button"> Let's do this </a>
+        <h2 class="editable"> A catchy heading </h2>
+        <p class="editable"> This is a call-to-action to drive traffic somewhere important </p>
+        <a href="#" class="button-box editable"> Let's do this </a>
     </div>
 
 </section> 
@@ -55,18 +57,6 @@ seo:
         {% endfor %}
 
     </div>
-
-
-    <!-- This checks if there are more than 15 blog posts, and if there are shows a link to the full blog archive -->
-
-    {% assign post_count = site.posts | size %}
-    
-    {% if post_count > 15 %}
-        <div class="center padded">
-            <a class="button" href="/blog-archive"> See More </a>
-        </div>
-       
-    {% endif %}
 
 </section>
 

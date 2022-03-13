@@ -514,6 +514,12 @@ color: var(--featured-light);
 }
 
 /* ------------ Blogging elements  ----------------------- */
+a.tag {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 1rem;;
+}
+
 .post-info {
     font-size: 0.8rem;
     color: var(--medium-text);

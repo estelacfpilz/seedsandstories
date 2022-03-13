@@ -7,9 +7,8 @@ description: >-
 author: Tina May
 featured: true
 categories:
-  - life
-  - travel
-  - remote work
+  - news
+  - stories
 featured_image: https://source.unsplash.com/random?sig=7
 seo:
   title:
