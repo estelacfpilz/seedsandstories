@@ -196,6 +196,8 @@ p, li {
     font-size: 1.1rem;
 }
 
+li { list-style-position: inside; }
+
 p:last-child {
     margin-bottom: 0;
 }
