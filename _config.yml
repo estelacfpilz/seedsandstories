@@ -65,6 +65,7 @@ _array_structures:
           _id: heading-two-col
           background-style:
           text-style:
+          headings-style: 
           heading:
           subheading: 
           block_html:
