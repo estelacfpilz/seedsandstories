@@ -41,7 +41,7 @@ _array_structures:
           _id: cta-arches
           heading:
           subheading: 
-      - label: Basic Heading + Text
+      - label: Just text
         icon: description
         value:
           _id: basic-text
@@ -50,4 +50,20 @@ _array_structures:
         icon: image
         value:
           _id: image-banner
+          block_image: 
+      - label: Two Col. - Text + Image
+        icon: description
+        value:
+          _id: image-and-text
+          bg-color:
+          block_html:
+          block_image: 
+      - label: Heading + Two Col. - Text + Image
+        icon: description
+        value:
+          _id: heading-two-col
+          bg-color:
+          heading:
+          subheading: 
+          block_html:
           block_image: 
