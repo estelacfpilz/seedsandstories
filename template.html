@@ -37,3 +37,8 @@ page_blocks:
     subheading: This is a subheading
 ---
 
+<!------------------------ Blocks  ------------------------>
+{% for block in page.page_blocks %}
+{% include blocks/{{block._id}}.html block=block %}
+{% endfor %}
+

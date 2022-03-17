@@ -234,6 +234,7 @@ h5 {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
+    line-height: 1.4; 
 }
 
 h6 {
@@ -279,9 +280,17 @@ p a:hover {
     color: var(--contrast-dark);
 }
 
+.bg-featured a:hover {
+    color: var(--featured-light);
+}
+
 a.hover-light:hover {
   color: var(--light); 
 }
+
+a.hover-featured-light:hover {
+    color: var(--featured-light); 
+  }
 
 .button-box { 
     display: inline-block;
@@ -302,6 +311,16 @@ a.hover-light:hover {
 }
 
 .button-subtle:hover {
+    color: var(--featured-light);
+}
+
+.button-subtle-light {
+    color: var(--light);
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.button-subtle-light:hover {
     color: var(--featured-light);
 }
 

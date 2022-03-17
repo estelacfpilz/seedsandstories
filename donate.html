@@ -1,6 +1,14 @@
 ---
 layout: default
-title: Get involved
+title: Support Seeds & Stories
+header_image: /images/seedsandstories-1.png
+donor-banner_image: /images/seedsandstories-2.png
+sponsor_image: /images/seedsandstories-6.png
+volunteer_image: /images/seedsandstories-7.png
+products:
+  - product_image: /images/seedsandstories-6.png
+  - product_image: /images/seedsandstories-7.png
+  - product_image: /images/seedsandstories-8.png
 seo:
   title:
   description:
@@ -9,3 +17,91 @@ seo:
   keywords:
   hide-from-google: false
 ---
+<!------------------------ Header  ------------------------>
+<section class="padded-tb grid bg-featured tall-60 text-light">
+  <div class="col-5_sm-12-middle padded-lg">
+    <h1 class="editable">Be part of this change</h1>
+    <h5 class="editable"><a href="#donate" class="hover-featured-light">Donate</a>, <a href="#sponsor-artisan" class="hover-featured-light">sponsor an artisan</a>, <a href="#volunteer" class="hover-featured-light"> volunteer</a> or <a href="#shop" class="hover-featured-light">shop our regenerative products</a></h5>
+  </div>
+  <div class="col-7_sm-12 sm-padded">
+    <div class="bg-image landscape" style="background-image: url({{page.header_image}});"></div>
+  </div>
+</section>
+
+<!------------------------ Donate  ------------------------>
+<section class="bg-v-light padded-tb grid" id="donate">
+  <div class="col-12 center editable text-featured"> 
+    <h2>Donate to Seeds & Stories</h2>
+    <h3>& contribute to women empowerment and environmental regeneration</h3>
+  </div>
+  <div class="col-6 hide-sm bg-image" style="background-image: url({{page.donor-banner_image}});"></div>
+  <div class="col-6_sm-12 padded center">
+    <h4 class="editable">Join our monthly giving community and transform the future of Ugandan families every single month.</4>
+    <script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe src="https://donorbox.org/embed/seeds-stories-open-campaign" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="padding-top: 5%; max-width: 500px; min-width: 250px; max-height:none!important;"></iframe>
+  </div>
+</section>
+
+<!------------------------ Other ways to contribute ------------------------>
+<section class="bg-light padded">
+  <div class="col-12 center editable capped-width-narrow" id="sponsor-artisan"> 
+    <h2 class="text-featured">Other ways to contribute</h2>
+    <p>Support our ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+  </div>
+  <div class="capped-width-narrow padded-t">
+    <div class="col-12 editable text-featured">
+        <h2>Sponsor an Artisan</h2>
+        <h5>& transform the lives of families in bigodi, uganda</h5>
+    </div>
+    
+    <div class="grid">
+        <div class="col-7_sm-12-middle padded-r editable">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolore. </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolore.</p>
+          <p>With every $$ we can provide</p>
+          <ul>
+            <li>X days of ...</li>
+            <li>(add here concrete demo of donation's impact)</li>
+          </ul>
+        </div>
+        <div class="col-5_sm-12">
+          <div class="bg-image square" style="background-image: url({{page.sponsor_image}});"></div>
+        </div>        
+    </div>
+  </div>
+
+  <div class="capped-width-narrow padded-t" id="volunteer">
+    <div class="col-12 editable text-featured right">
+        <h2>Volunteer</h2>
+        <h5>& become part of the Seeds & Stories family</h5>
+    </div>
+    
+    <div class="grid">
+      <div class="col-5_sm-12">
+        <div class="bg-image square" style="background-image: url({{page.volunteer_image}});"></div>
+      </div>   
+      <div class="col-7_sm-12-middle padded-l editable right">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolore. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolore. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <a href="/contact.html">Contact us to know more</a>
+      </div>     
+    </div>
+  </div>
+</section>
+
+<!------------------ Coming soon - Shop ---------------------->
+<section class="padded bg-featured text-light">
+  <div class="capped-width-narrow grid">
+    <div class="col-12 editable center">
+      <h2>Coming soon...</h2>
+      <h5>Products slowly crafted for you</h5>
+    </div>
+    {% for item in page.products %}
+    <div class="col-4_sm-6 padded-1">
+      <div class="bg-image square" style="background-image: url({{item.product_image}});"></div>
+    </div>
+    {% endfor %}
+  </div>
+  <h3 class="center editable"><a href="/shop.html" class="hover-featured-light button-subtle-light">Learn more about our products</a></h3>
+  
+</section>
