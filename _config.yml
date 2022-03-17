@@ -72,18 +72,3 @@ _array_structures:
           subheading: 
           block_html:
           block_image: 
-      
-
-page_inline-blocks: []
-_array_structures:
-  page_inline-blocks:
-    values:
-    - label: Get involved blocks
-        icon: description
-        value:
-          _id: contribute
-          text-alignment:
-          heading:
-          subheading: 
-          block_html:
-          block_image: 
