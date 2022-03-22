@@ -19,7 +19,8 @@ page_blocks:
       occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
       anim id est laborum.</p>
     block_image: /images/seedsandstories-12.png
-  - _id: cta-photobanner
+  - _id: image-banner
+    block_image: /images/process-1.jpg
   - _id: image-and-text
     background-style: bg-light
     text-style:
@@ -35,7 +36,15 @@ page_blocks:
   - _id: cta-arches
     heading: This is a heading
     subheading: This is a subheading
+  - _id: basic-text
+    block_html: >-
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ipsam
+      non doloremque sint modi atque deserunt. Pariatur aperiam laborum fugiat
+      numquam officia harum, impedit minima mollitia voluptates, qui quae
+      ab.</p>
+  - _id: cta-photobanner
 ---
+
 <!------------------------ Blocks  ------------------------>
 {% for block in page.page_blocks %}
 {% include blocks/{{block._id}}.html block=block %}
