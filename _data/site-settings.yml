@@ -1,22 +1,27 @@
-seo: 
-  site_name: Tina's Amazing Blog
-  title: Default SEO Title
-  description: 
-  keywords: 
-  social_image: 
-  author: 
-  favicon_image: 
-social: 
+seo:
+  site_name: Seeds & Stories
+  title: Seeds & Stories
+  description: >-
+    Seeds and Stories is a social enterprise that empowers women in rural Uganda
+    through our regenerative fashion line. Our products, vocational training,
+    and permaculture programs create new economic opportunities and self-led
+    community development, while also having a positive impact on the local
+    environment.
+  keywords:
+  social_image:
+  author:
+  favicon_image:
+social:
   instagram_username:
   facebook_url:
-  twitter_username: 
-design: 
-  dark-text_color: 'rgb(60,60,65)'
-  medium-text_color: 'rgb(90,90,95)'
+  twitter_username:
+design:
+  dark-text_color: rgb(60,60,65)
+  medium-text_color: rgb(90,90,95)
   light-text_color: '#F2EAE4'
   featured_color: '#c95f38'
   featured-light_color: '#E3825F'
-  dark_color: 'rgb(60,60,65)'
+  dark_color: rgb(60,60,65)
   medium_color: '#ede8e4'
   light_color: '#F2EAE4'
   v-light_color: '#f9f9f9'
