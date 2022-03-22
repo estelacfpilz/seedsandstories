@@ -21,7 +21,10 @@ _comments:
   title: Max 70 characters
   social_image: landscape 1200 x 600px
 ---
-![](/images/seedsandstories-13.jpg){: .float-left-image width="1200" height="1600"}Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ipsam non doloremque sint modi atque deserunt. Pariatur aperiam laborum fugiat numquam officia harum, impedit minima mollitia voluptates, qui quae ab.
+### ![](/images/seedsandstories-13.jpg){: .float-right-image width="1200" height="1600"}Subheading
+{: .center}
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ipsam non doloremque sint modi atque deserunt. Pariatur aperiam laborum fugiat numquam officia harum, impedit minima mollitia voluptates, qui quae ab.
 {: .center}
 
 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ipsam non doloremque sint modi atque deserunt. Pariatur aperiam laborum fugiat numquam officia harum, impedit minima mollitia voluptates, qui quae ab.
