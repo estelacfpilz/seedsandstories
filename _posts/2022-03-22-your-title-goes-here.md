@@ -9,6 +9,7 @@ featured: true
 categories:
   - stories
   - news
+  - fashion
 featured_image: /images/seedsandstories-14.jpg
 seo:
   title:
