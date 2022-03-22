@@ -1,0 +1,42 @@
+---
+layout: default
+title: New page
+page_blocks:
+  - _id: image-banner
+    block_image: /images/artisan-and-margarida.png
+  - _id: heading-two-col
+    background-style: bg-contrast
+    text-style: text-light
+    heading: This is a heading
+    subheading: This is a subheading
+    block_html: >-
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</p><h5>Another subheading here if you'd
+      like</h5><p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. <a href="#">Excepteur sint</a>
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+      anim id est laborum.</p>
+    block_image: /images/seedsandstories-12.png
+  - _id: cta-photobanner
+  - _id: image-and-text
+    background-style: bg-light
+    text-style:
+    block_html: >-
+      <h3>Flexible headings here</h3><p>Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.</p>
+    block_image: /images/seedsandstories-13.jpg
+  - _id: cta-arches
+    heading: This is a heading
+    subheading: This is a subheading
+---
+<!------------------------ Blocks  ------------------------>
+{% for block in page.page_blocks %}
+{% include blocks/{{block._id}}.html block=block %}
+{% endfor %}
