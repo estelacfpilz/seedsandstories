@@ -36,6 +36,10 @@ img.small-centered-image {
 }
 
 /* Buttons */
+p.button-parent {
+    border: 0px solid white;
+}
+
 p.button-box a { 
     display: inline-block;
     text-decoration: none;
