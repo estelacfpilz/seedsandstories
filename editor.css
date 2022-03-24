@@ -40,7 +40,7 @@ p.button-parent {
     border: 0px solid white;
 }
 
-p.button-box a { 
+p.button-parent a { 
     display: inline-block;
     text-decoration: none;
     line-height: 1;
@@ -48,7 +48,7 @@ p.button-box a {
     border: 1px solid;
 }
 
-p.button-box a:hover {
+p.button-parent a:hover {
     color: var(--featured);
 }
 
