@@ -33,7 +33,17 @@ _editables:
   text:
     italic: true
   block:
-    format: p h3
+    format: p h2 h3 h4 h5 h6 a
+    bold: true
+    italic: true
+    bulletedlist: true
+    numberedlist: true
+    styles: /css/editor.css
+    left: align-left
+    center: align-center
+    right: align-right
+    justify: align-justify
+    image: true
     undo: true
     redo: true
   content:
