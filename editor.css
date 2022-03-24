@@ -36,11 +36,11 @@ img.small-centered-image {
 }
 
 /* Buttons */
-p.button-parent {
+p.button-box {
     border: 0px solid white;
 }
 
-p.button-parent a { 
+p.button-box a { 
     display: inline-block;
     text-decoration: none;
     line-height: 1;
@@ -48,8 +48,12 @@ p.button-parent a {
     border: 1px solid;
 }
 
-p.button-parent a:hover {
+p.button-box a:hover {
     color: var(--featured);
+}
+
+p.button-subtle {
+    border: 0px solid white;
 }
 
 p.button-subtle a {
@@ -62,6 +66,10 @@ p.button-subtle a:hover {
     color: var(--featured-light);
 }
 
+p.button-subtle-light {
+    border: 0px solid white;
+}
+
 p.button-subtle-light a {
     color: var(--light);
     text-decoration: none;
@@ -70,6 +78,10 @@ p.button-subtle-light a {
 
 p.button-subtle-light a:hover {
     color: var(--featured-light);
+}
+
+p.button-bold {
+    border: 0px solid white;
 }
 
 p.button-bold a { 
