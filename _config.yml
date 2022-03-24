@@ -39,7 +39,7 @@ _editables:
     bulletedlist: true
     numberedlist: true
     link: true
-    styles: /css/editor.css
+    styles: /editor.css
     left: align-left
     center: align-center
     right: align-right
