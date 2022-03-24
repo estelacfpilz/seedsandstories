@@ -1,5 +1,6 @@
 /* These styles are available in the cloudcannon blog post editor as classes to apply */
 
+/* Images */
 img.wide-image {
     margin-left: -5%;
     margin-right: -5%;
@@ -32,6 +33,55 @@ img.float-right-image {
 img.small-centered-image {
     max-width: 300px;
     margin:auto;
+}
+
+/* Buttons */
+a.button-box { 
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid;
+}
+
+a.button-box:hover {
+    color: var(--featured);
+}
+
+a.button-subtle {
+    color: var(--featured);
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+a.button-subtle:hover {
+    color: var(--featured-light);
+}
+
+a.button-subtle-light {
+    color: var(--light);
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+a.button-subtle-light:hover {
+    color: var(--featured-light);
+}
+
+a.button-bold { 
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--featured);
+    color: var(--light-text);
+    border: 1px solid var(--featured);
+}
+
+a.button-bold:hover {
+    background-color: var(--featured-light);
+    border: 1px solid var(--featured-light);
+    color: var(--light-text);
 }
 
 /* Applied to content, excluded from style dropdown */
