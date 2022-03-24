@@ -47,6 +47,8 @@ _editables:
     image: true
     undo: true
     redo: true
+    removeformat: true
+    copyformatting: true
   content:
     blockquote: true
     bold: true

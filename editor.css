@@ -36,7 +36,7 @@ img.small-centered-image {
 }
 
 /* Buttons */
-a.button-box { 
+p.button-box a { 
     display: inline-block;
     text-decoration: none;
     line-height: 1;
@@ -44,31 +44,31 @@ a.button-box {
     border: 1px solid;
 }
 
-a.button-box:hover {
+p.button-box a:hover {
     color: var(--featured);
 }
 
-a.button-subtle {
+p.button-subtle a {
     color: var(--featured);
     text-decoration: none;
     border-bottom: 1px solid;
 }
 
-a.button-subtle:hover {
+p.button-subtle a:hover {
     color: var(--featured-light);
 }
 
-a.button-subtle-light {
+p.button-subtle-light a {
     color: var(--light);
     text-decoration: none;
     border-bottom: 1px solid;
 }
 
-a.button-subtle-light:hover {
+p.button-subtle-light a:hover {
     color: var(--featured-light);
 }
 
-a.button-bold { 
+p.button-bold a { 
     display: inline-block;
     text-decoration: none;
     line-height: 1;
@@ -78,7 +78,7 @@ a.button-bold {
     border: 1px solid var(--featured);
 }
 
-a.button-bold:hover {
+p.button-bold a:hover {
     background-color: var(--featured-light);
     border: 1px solid var(--featured-light);
     color: var(--light-text);
