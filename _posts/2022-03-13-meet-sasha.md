@@ -8,7 +8,7 @@ author: Kyla
 featured: true
 categories:
   - stories
-featured_image: /images/seedsandstories-13.jpg
+featured_image: /uploads/dsc-12423-507b-1.jpg
 seo:
   title:
   description:
