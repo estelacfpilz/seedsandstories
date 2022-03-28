@@ -9,7 +9,7 @@ featured: true
 categories:
   - news
   - stories
-featured_image: /images/seedsandstories-14.jpg
+featured_image: /uploads/dsc-12423-117b.jpg
 seo:
   title:
   description:
